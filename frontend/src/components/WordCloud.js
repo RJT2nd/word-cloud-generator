@@ -67,7 +67,6 @@ class WordCloud extends React.Component {
     
     process() {
         
-
         this.setState({
             uploading: true
         });
