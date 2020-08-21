@@ -41,7 +41,7 @@ router.post('/', function(req, res, next) {
       // Create WordCloud using Python
       let options = {
         mode: 'text',
-        pythonPath: '/usr/bin/python3.6',
+        pythonPath: '/usr/bin/python',
         args: [text, name, stopwords]
       };
       
@@ -90,7 +90,7 @@ router.post('/process-text', function(req, res, next) {
       // Create WordCloud using Python
       let options = {
         mode: 'text',
-        pythonPath: '/usr/bin/python3.6',
+        pythonPath: '/usr/bin/python',
         args: [text, stopwords]
       };
       
