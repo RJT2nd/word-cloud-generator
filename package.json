@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "build": "cd frontend/ && npm run build && cd ..",
+    "frontend": "cd frontend/ && serve -l 8080 -s build && cd ..",
     "both": "cd frontend/ && serve -l 8080 -s build && cd ../ && node ./bin/www"
   },
   "dependencies": {
